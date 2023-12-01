@@ -1,4 +1,4 @@
-package com.valevil27.advent2023
+package com.valevil27.advent2023.Day01
 
 import scala.io.Source
 
