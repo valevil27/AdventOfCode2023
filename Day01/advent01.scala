@@ -8,7 +8,7 @@ object Star01 extends App:
     for line <- lines yield
       val digits = line.filter(_.isDigit)
       (digits.head.toString + digits.last.toString).toInt
-  @main def solve1 =
+  @main def solve01 =
     println(extractNumbers(lines).sum)
 
 object Star02 extends App:
@@ -27,5 +27,5 @@ object Star02 extends App:
     var result = line
     for (k, v) <- mapNumbers do result = result.replaceAll(k, k + v + k)
     result
-  @main def solve2 =
+  @main def solve02 =
     println(Star01.extractNumbers(Star01.lines.map(parseNumbers)).sum)
