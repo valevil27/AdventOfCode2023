@@ -9,3 +9,4 @@ Join the advent of code at https://adventofcode.com/
 | Day | First Puzzle | Second Puzzzle |
 | --: | :----------: | :------------: |
 | [01](/Day01/advent01.scala) |      ⭐      |       ⭐       |
+| [02](/Day02/advent02.scala) |      ⭐      |       ⭐       |
