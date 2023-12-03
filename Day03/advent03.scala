@@ -67,8 +67,10 @@ object Star05:
         case _ =>
     retList
   @main def solve05 =
+    val correct = 528799
     val listNumbers = input.zipWithIndex.flatMap((s, r) => getNumbers(s, r))
-    println(listNumbers.filter(_.hasSurround(input)).foldLeft(0)(_ + _.value))
+    val solution = listNumbers.filter(_.hasSurround(input)).foldLeft(0)(_ + _.value)
+    println(s"Correct? ${correct == solution}")
 
 object Star06:
   import Star05.{Number, Symbol, getNumbers}
@@ -83,4 +85,6 @@ object Star06:
       .sum
 
   @main def solve06 =
-    println(getGears(Star05.input))
+    val correct = 84907174
+    val solution = getGears(Star05.input)
+    println(s"Correct? ${correct == solution}")
