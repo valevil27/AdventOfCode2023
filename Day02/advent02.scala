@@ -1,4 +1,4 @@
-package com.valevil27.advent2023.Day01
+package com.valevil27.advent2023.Day02
 
 import io.Source
 object Star03 extends App:
