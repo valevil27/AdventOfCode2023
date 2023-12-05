@@ -26,7 +26,7 @@ object Star07:
       case i if i == 0 => 0
       case i           => 1 << i - 1
 
-  def solve(input: Iterable[String]) =
+  def solve(input: Seq[String]) =
     input.map { line =>
       val wining = extractWiningNumbers(line)
       val card = extractCardNumbers(line)
