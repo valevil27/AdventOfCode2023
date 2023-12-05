@@ -39,10 +39,25 @@ object Star09:
       var input = s
       states.foreach(state => input = passThroughState(input, state))
       input
-    }
+    }.min
 
   @main def solve09 =
-    println(solve(input).min)
+    println(solve(input))
 
 object Star10:
-  ???
+  import Star09.{separateMaps, parseMaps, parseSeeds, passThroughState}
+  def parseSeedRange(seeds: Seq[Long]) = 
+    seeds.grouped(2).flatMap(arr => arr(0) until arr(0) + arr(1) ).toList
+  def solve(input: Seq[String]) =
+    val totalMaps = separateMaps(input)
+    val seeds = parseSeedRange(parseSeeds(input(0)))
+    val states = totalMaps.map(parseMaps)
+    seeds.map { s =>
+      var input = s
+      states.foreach(state => input = passThroughState(input, state))
+      input
+    }.min
+  @main def solve10 = 
+    println(solve(input))
+    
+  
