@@ -1,4 +1,4 @@
-package com.valevil27.advent2023.Day052
+package com.valevil27.advent2023.Day05
 
 import io.Source
 import scala.util.boundary
