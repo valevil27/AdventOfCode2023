@@ -13,4 +13,5 @@ Join the advent of code at https://adventofcode.com/
 | [03](/Day03/advent03.scala) |      ⭐      |       ⭐       |
 | [04](/Day04/advent04.scala) |      ⭐      |       ⭐       |
 | [05](/Day05/advent05.scala) |      ⭐      |       ⭐       |
+| [06](/Day06/advent06.scala) |      ⭐      |       ⭐       |
 
